@@ -22,6 +22,8 @@
 (dict_pattern "dict" @type.builtin)
 (dict_entry (string) @property)
 (dict_pattern_entry (string) @property)
+(dict_pattern_entry (value_identifier) @variable.parameter)
+(parameter (dict_pattern (dict_pattern_entry (value_identifier) @variable.parameter)))
 
 ((type_identifier) @type.builtin
   (#any-of? @type.builtin
@@ -104,18 +106,18 @@
 (parameter (record_pattern (value_identifier) @variable.parameter))
 
 ; function identifier in let binding
-(let_binding 
+(let_binding
   pattern: (value_identifier) @function
   body: (function))
 
 ; function calls
 
-(call_expression 
+(call_expression
   function: (value_identifier_path
     _
     (value_identifier) @function.call))
 
-(call_expression 
+(call_expression
   function: (value_identifier) @function.call)
 
 ; highlight the right-hand side of a pipe operator as a function call
