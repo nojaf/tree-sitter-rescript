@@ -910,6 +910,7 @@
   {
     "type": "decorator",
     "named": true,
+    "extra": true,
     "fields": {},
     "children": {
       "multiple": true,
