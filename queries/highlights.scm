@@ -17,6 +17,12 @@
   (list_pattern)
 ] @type
 
+; Dict
+(dict "dict" @type.builtin)
+(dict_pattern "dict" @type.builtin)
+(dict_entry (string) @property)
+(dict_pattern_entry (string) @property)
+
 ((type_identifier) @type.builtin
   (#any-of? @type.builtin
     "int" "char" "string" "float" "bool" "unit"))
