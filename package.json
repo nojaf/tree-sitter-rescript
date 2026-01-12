@@ -26,6 +26,7 @@
     "prestart": "tree-sitter build --wasm",
     "start": "tree-sitter playground",
     "test": "tree-sitter test",
-    "parse": "tree-sitter parse"
+    "parse": "tree-sitter parse",
+    "generate": "tree-sitter generate"
   }
 }
