@@ -6,13 +6,13 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ```bash
 # Generate parser from grammar (required after grammar.js changes)
-tree-sitter generate
+npx tree-sitter generate
 
 # Run all corpus tests
-tree-sitter test
+npx tree-sitter test
 
 # Run tests for a specific grammar rule (filter by name)
-tree-sitter test --include "switch"
+npx tree-sitter test --include "switch"
 
 # Parse a file to see syntax tree (useful for debugging)
 npm run parse path/to/file.res
@@ -44,7 +44,7 @@ npm install
 - Nested multiline comments (`/* /* */ */`)
 - Template string interpolation (`\`hello ${name}\``)
 - Parenthesis nesting tracking (affects newline significance)
-- `list{` constructor detection
+- `list{` and `dict{` constructor detection
 - Decorator parsing (`@decorator` vs `@decorator(args)`)
 
 The scanner maintains state (`ScannerState`) tracking parenthesis nesting depth, whether inside quotes/backticks, and EOF reporting.

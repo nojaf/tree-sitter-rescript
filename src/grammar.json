@@ -3169,7 +3169,12 @@
       "type": "SEQ",
       "members": [
         {
-          "type": "STRING",
+          "type": "ALIAS",
+          "content": {
+            "type": "SYMBOL",
+            "name": "_dict_constructor"
+          },
+          "named": false,
           "value": "dict"
         },
         {
@@ -4862,7 +4867,12 @@
       "type": "SEQ",
       "members": [
         {
-          "type": "STRING",
+          "type": "ALIAS",
+          "content": {
+            "type": "SYMBOL",
+            "name": "_dict_constructor"
+          },
+          "named": false,
           "value": "dict"
         },
         {
@@ -8771,6 +8781,10 @@
     {
       "type": "SYMBOL",
       "name": "_list_constructor"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "_dict_constructor"
     },
     {
       "type": "SYMBOL",

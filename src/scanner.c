@@ -12,6 +12,7 @@ enum TokenType {
   L_PAREN,
   R_PAREN,
   LIST_CONSTRUCTOR,
+  DICT_CONSTRUCTOR,
   DECORATOR,
   DECORATOR_INLINE,
 };
@@ -308,6 +309,26 @@ bool tree_sitter_rescript_external_scanner_scan(
       if (lexer->lookahead == 'i') {
         advance(lexer);
         if (lexer->lookahead == 's') {
+          advance(lexer);
+          if (lexer->lookahead == 't') {
+            advance(lexer);
+            if (lexer->lookahead == '{') {
+              lexer->mark_end(lexer);
+              return true;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  if (valid_symbols[DICT_CONSTRUCTOR]) {
+    lexer->result_symbol = DICT_CONSTRUCTOR;
+    if (lexer->lookahead == 'd') {
+      advance(lexer);
+      if (lexer->lookahead == 'i') {
+        advance(lexer);
+        if (lexer->lookahead == 'c') {
           advance(lexer);
           if (lexer->lookahead == 't') {
             advance(lexer);
