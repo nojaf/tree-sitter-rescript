@@ -11,3 +11,8 @@ let fn = (a, (b, c), {d, e}, [f, g]) => a + b + c + d + e + f + g
 
 let get = async (id) => id
 //         ^ keyword.coroutine
+
+let getFromDict = (dict{"key": value}) => value
+//                 ^ type.builtin
+//                      ^ property
+//                             ^ variable.parameter

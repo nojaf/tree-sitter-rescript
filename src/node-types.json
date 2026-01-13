@@ -214,6 +214,10 @@
         "named": true
       },
       {
+        "type": "dict",
+        "named": true
+      },
+      {
         "type": "extension_expression",
         "named": true
       },
@@ -431,6 +435,10 @@
           "named": true
         },
         {
+          "type": "dict_pattern",
+          "named": true
+        },
+        {
           "type": "exception_pattern",
           "named": true
         },
@@ -531,6 +539,10 @@
         },
         {
           "type": "character",
+          "named": true
+        },
+        {
+          "type": "dict_pattern",
           "named": true
         },
         {
@@ -947,6 +959,158 @@
     }
   },
   {
+    "type": "dict",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "dict_entry",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "dict_entry",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "expression",
+          "named": true
+        },
+        {
+          "type": "string",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "dict_pattern",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "dict_pattern_entry",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "dict_pattern_entry",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "array_pattern",
+          "named": true
+        },
+        {
+          "type": "as_aliasing",
+          "named": true
+        },
+        {
+          "type": "character",
+          "named": true
+        },
+        {
+          "type": "dict_pattern",
+          "named": true
+        },
+        {
+          "type": "exception_pattern",
+          "named": true
+        },
+        {
+          "type": "false",
+          "named": true
+        },
+        {
+          "type": "lazy_pattern",
+          "named": true
+        },
+        {
+          "type": "list_pattern",
+          "named": true
+        },
+        {
+          "type": "module_pack",
+          "named": true
+        },
+        {
+          "type": "number",
+          "named": true
+        },
+        {
+          "type": "or_pattern",
+          "named": true
+        },
+        {
+          "type": "parenthesized_pattern",
+          "named": true
+        },
+        {
+          "type": "polyvar_pattern",
+          "named": true
+        },
+        {
+          "type": "polyvar_type_pattern",
+          "named": true
+        },
+        {
+          "type": "range_pattern",
+          "named": true
+        },
+        {
+          "type": "record_pattern",
+          "named": true
+        },
+        {
+          "type": "string",
+          "named": true
+        },
+        {
+          "type": "template_string",
+          "named": true
+        },
+        {
+          "type": "true",
+          "named": true
+        },
+        {
+          "type": "tuple_pattern",
+          "named": true
+        },
+        {
+          "type": "unit",
+          "named": true
+        },
+        {
+          "type": "value_identifier",
+          "named": true
+        },
+        {
+          "type": "variant_pattern",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
     "type": "else_clause",
     "named": true,
     "fields": {},
@@ -1017,6 +1181,10 @@
         },
         {
           "type": "character",
+          "named": true
+        },
+        {
+          "type": "dict_pattern",
           "named": true
         },
         {
@@ -1219,6 +1387,10 @@
         },
         {
           "type": "character",
+          "named": true
+        },
+        {
+          "type": "dict_pattern",
           "named": true
         },
         {
@@ -2017,6 +2189,10 @@
           "named": true
         },
         {
+          "type": "dict_pattern",
+          "named": true
+        },
+        {
           "type": "exception_pattern",
           "named": true
         },
@@ -2123,6 +2299,10 @@
           },
           {
             "type": "character",
+            "named": true
+          },
+          {
+            "type": "dict_pattern",
             "named": true
           },
           {
@@ -2267,6 +2447,10 @@
         },
         {
           "type": "character",
+          "named": true
+        },
+        {
+          "type": "dict_pattern",
           "named": true
         },
         {
@@ -2753,6 +2937,10 @@
           "named": true
         },
         {
+          "type": "dict_pattern",
+          "named": true
+        },
+        {
           "type": "exception_pattern",
           "named": true
         },
@@ -2857,6 +3045,10 @@
         },
         {
           "type": "character",
+          "named": true
+        },
+        {
+          "type": "dict_pattern",
           "named": true
         },
         {
@@ -2998,6 +3190,10 @@
         },
         {
           "type": "character",
+          "named": true
+        },
+        {
+          "type": "dict_pattern",
           "named": true
         },
         {
@@ -3483,6 +3679,10 @@
           "named": true
         },
         {
+          "type": "dict_pattern",
+          "named": true
+        },
+        {
           "type": "exception_pattern",
           "named": true
         },
@@ -3775,6 +3975,10 @@
             "named": true
           },
           {
+            "type": "dict_pattern",
+            "named": true
+          },
+          {
             "type": "exception_pattern",
             "named": true
           },
@@ -4005,6 +4209,10 @@
         },
         {
           "type": "character",
+          "named": true
+        },
+        {
+          "type": "dict_pattern",
           "named": true
         },
         {
@@ -4793,6 +5001,10 @@
   {
     "type": "decorator_identifier",
     "named": true
+  },
+  {
+    "type": "dict",
+    "named": false
   },
   {
     "type": "downto",
