@@ -49,3 +49,6 @@ zig-out/
 # Others
 log.html
 test_wild/
+
+# Playground
+public/
