@@ -35,6 +35,10 @@ jobs:
       - name: Export playground
         run: npx tree-sitter playground --export ./public
 
+      - name: Set LANGUAGE_BASE_URL for GitHub Pages
+        run: |
+          sed -i 's|LANGUAGE_BASE_URL = ""|LANGUAGE_BASE_URL = "/tree-sitter-rescript"|' ./public/index.html
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
