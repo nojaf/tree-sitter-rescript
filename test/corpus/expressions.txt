@@ -480,6 +480,66 @@ if predicateA {
             (value_identifier)))))))
 
 ================================================================================
+If/else with else on new line
+================================================================================
+
+if predicateA {
+  foo
+}
+else if predicateB {
+  bar
+}
+else {
+  baz
+}
+
+if predicateA {
+  foo
+} // comment before else if
+else if predicateB {
+  bar
+} // comment before else
+else {
+  baz
+}
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (expression_statement
+    (if_expression
+      (value_identifier)
+      (block
+        (expression_statement
+          (value_identifier)))
+      (else_if_clause
+        (value_identifier)
+        (block
+          (expression_statement
+            (value_identifier))))
+      (else_clause
+        (block
+          (expression_statement
+            (value_identifier))))))
+  (expression_statement
+    (if_expression
+      (value_identifier)
+      (block
+        (expression_statement
+          (value_identifier)))
+      (comment)
+      (else_if_clause
+        (value_identifier)
+        (block
+          (expression_statement
+            (value_identifier))))
+      (comment)
+      (else_clause
+        (block
+          (expression_statement
+            (value_identifier)))))))
+
+================================================================================
 Switch of literals
 ================================================================================
 
