@@ -1080,6 +1080,10 @@
         },
         {
           "type": "SYMBOL",
+          "name": "record_type"
+        },
+        {
+          "type": "SYMBOL",
           "name": "generic_type"
         },
         {
@@ -8589,6 +8593,10 @@
     [
       "type_binding",
       "_inline_type"
+    ],
+    [
+      "_type",
+      "_non_function_inline_type"
     ],
     [
       "_module_structure",
