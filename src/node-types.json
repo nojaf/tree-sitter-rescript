@@ -1582,6 +1582,10 @@
           "named": true
         },
         {
+          "type": "record_type",
+          "named": true
+        },
+        {
           "type": "tuple_type",
           "named": true
         },
@@ -3344,6 +3348,10 @@
           "named": true
         },
         {
+          "type": "record_type",
+          "named": true
+        },
+        {
           "type": "tuple_type",
           "named": true
         },
@@ -3427,6 +3435,10 @@
         },
         {
           "type": "polyvar_type",
+          "named": true
+        },
+        {
+          "type": "record_type",
           "named": true
         },
         {
@@ -4365,6 +4377,10 @@
           "named": true
         },
         {
+          "type": "record_type",
+          "named": true
+        },
+        {
           "type": "tuple_type",
           "named": true
         },
@@ -4457,6 +4473,10 @@
         },
         {
           "type": "polyvar_type",
+          "named": true
+        },
+        {
+          "type": "record_type",
           "named": true
         },
         {
